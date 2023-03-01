@@ -14,25 +14,36 @@ function writeElement(value) {
             screenOldValue.value = screen.value;
             beforeEqual = false;
         } else {
-            const calcul = screenOldValue.value.toString() + screen.value.toString();
-            screenOldValue.value = eval(calcul);
+            if(!screenOldValue.value) {
+                screenOldValue.value = screen.value;
+            } else {
+                const calcul = screenOldValue.value.toString() + screen.value.toString();
+                let answer = eval(calcul);
+                screenOldValue.value = answer;
+                addToHistory(calcul, answer);
+            }
         }
         screen.value = '';
     }
     screen.value += value;
 }
 
-function calculResult() {
-    const calcul = screenOldValue.value.toString() + screen.value.toString();
-    let answer = eval(calcul);
-    let saveValue = screen.value + " = " +answer;
-    beforeEqual = true
-    screen.value = answer;
-
-    var newDiv = document.createElement("div");
+function addToHistory(calcul, answer){
+    let saveValue = calcul + " = " +answer;
+    const newDiv = document.createElement("div");
     newDiv.classList.add('calcul');
     newDiv.textContent = saveValue;
     history.appendChild(newDiv);
+}
+
+function calculResult() {
+    const calcul = screenOldValue.value.toString() + screen.value.toString();
+    let answer = eval(calcul);
+    addToHistory(calcul, answer);
+    beforeEqual = true
+    screen.value = answer;
+
+
 }
 
 buttons.forEach(function (button) {
