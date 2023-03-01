@@ -34,6 +34,29 @@ body{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.history {
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 2px;
+    max-width: 310px;
+    height:514.82px;
+    background-color: #22252D;
+    width:310px;
+    border-radius: 9px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.calculHistory{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    font-size: x-large;
+}
+
 .buttons {
     background-color: #171717;
     border-top-left-radius: 20px;
@@ -45,6 +68,11 @@ body{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 300px;
+}
+
+.calcul{
+    color:white;
+    width:100%;
 }
 
 input {
