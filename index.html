@@ -9,30 +9,92 @@
 
     <body>
 
-        <div class="calculator">
-            <input id="screen-value" type="text" class="screen-value" placeholder="0">
-            <input id="screen" type="text" class="screen" placeholder="0">
-            <div class="buttons">
-                <button type="button" class="btn btnx" id="btn-clear-error">CE</button>
-                <button type="button" class="btn btnx" id="btn-clear">C</button>
-                <div></div>
-                <button type="button" class="btn funcbtn" data-num="/" id="btn-division">/</button>
-                <button type="button" class="btn" data-num="7">7</button>
-                <button type="button" class="btn" data-num="8">8</button>
-                <button type="button" class="btn" data-num="9">9</button>
-                <button type="button" class="btn funcbtn" data-num="*" id="btn-multiply">x</button>
-                <button type="button" class="btn" data-num="4">4</button>
-                <button type="button" class="btn" data-num="5">5</button>
-                <button type="button" class="btn" data-num="6">6</button>
-                <button type="button" class="btn funcbtn" data-num="-" id="btn-remove">-</button>
-                <button type="button" class="btn" data-num="1">1</button>
-                <button type="button" class="btn" data-num="2">2</button>
-                <button type="button" class="btn" data-num="3">3</button>
-                <button type="button" class="btn funcbtn" data-num="+" id="btn-add">+</button>
-                <button type="button" class="btn" data-num="0">0</button>
-                <button type="button" class="btn" data-num=".">,</button>
-                <button type="button" class="btn large funcbtn" id="btn-equal">=</button>
+        <div class="rowFlex">
+            <div class="box calculator">
+                <input id="screen-value" type="text" class="screen-value" placeholder="0">
+                <input id="screen" type="text" class="screen" placeholder="0">
+                <div class="buttons">
+                    <button type="button" class="btn btnx" id="btn-clear-error">CE</button>
+                    <button type="button" class="btn btnx" id="btn-clear">C</button>
+                    <div></div>
+                    <button type="button" class="btn funcbtn" data-num="/" id="btn-division">/</button>
+                    <button type="button" class="btn" data-num="7">7</button>
+                    <button type="button" class="btn" data-num="8">8</button>
+                    <button type="button" class="btn" data-num="9">9</button>
+                    <button type="button" class="btn funcbtn" data-num="*" id="btn-multiply">x</button>
+                    <button type="button" class="btn" data-num="4">4</button>
+                    <button type="button" class="btn" data-num="5">5</button>
+                    <button type="button" class="btn" data-num="6">6</button>
+                    <button type="button" class="btn funcbtn" data-num="-" id="btn-remove">-</button>
+                    <button type="button" class="btn" data-num="1">1</button>
+                    <button type="button" class="btn" data-num="2">2</button>
+                    <button type="button" class="btn" data-num="3">3</button>
+                    <button type="button" class="btn funcbtn" data-num="+" id="btn-add">+</button>
+                    <button type="button" class="btn" data-num="0">0</button>
+                    <button type="button" class="btn" data-num=".">,</button>
+                    <button type="button" class="btn large funcbtn" id="btn-equal">=</button>
+                </div>
             </div>
+        </div>
+
+        <div class="box instructions">
+            <h2>Boutons et pièces</h2>
+            <p>La meilleure façon de commencer à utiliser notre calculatrice en ligne est de savoir à quoi sert chaque bouton.</p>
+            <ul>
+                <li>AC (All Clear) : efface tous les contenus et formules précédents du système</li>
+                <li>C (Clear) : efface le calcul actuel</li>
+                <li>Numéros : chiffres de 1 à 9</li>
+                <li>Point décimal (.) : pour les nombres avec décimales (par exemple, 1,25, 2,3, etc.)</li>
+                <li>Opérations : addition (+), soustraction (-), multiplication (*), division (/)</li>
+                <li>Signe égal (=) : vous donne la réponse à votre formule.</li>
+            </ul>
+            <p>Champ supérieur : où vous verrez la réponse après avoir effectué une opération.</p>
+
+            <h2>Comment résoudre des problèmes à l'aide de notre calculatrice</h2>
+            <p>Si c'est la première fois que vous utilisez une calculatrice, ne vous inquiétez pas ! Nous allons vous montrer comment faire.</p>
+
+            <h3>Addition</h3>
+            <p>Imaginons que vous ayez un problème demandant de trouver la quantité totale d'œufs dans un panier. La dame aux œufs a déjà 5 œufs. Elle en ajoute 8 autres. Dans ce cas, vous effectuez une addition.</p>
+            <ol>
+                <li>Appuyez sur AC pour réinitialiser la calculatrice.</li>
+                <li>Entrez le nombre 5 dans la calculatrice. Ce nombre est votre addenda. Les additions sont des nombres que vous ajoutez ensemble.</li>
+                <li>Appuyez sur "+" pour dire à la calculatrice d'additionner.</li>
+                <li>Entrez votre autre addition, qui est 8.</li>
+                <li>Appuyez sur "=" (le signe égal) pour trouver la réponse ou la somme des deux nombres. Votre réponse sera "13".</li>
+                <li>Lorsque vous travaillez avec plus de deux additions, entrez simplement chaque nombre séparé par le signe d'addition ("+") avant d'appuyer sur le signe égal.</li>
+            </ol>
+
+            <h3>Soustraction</h3>
+            <p>L'opposé de l'addition est la soustraction. Dans ce cas, la dame aux œufs a mis 10 œufs dans le panier. Plus tard, elle a enlevé 2 œufs parce qu'elle a trouvé des fissures dans la coquille. Combien en reste-t-il dans le panier ?</p>
+            <p>Appuyez sur AC pour réinitialiser la calculatrice.</p>
+            <ol>
+                <li>Entrez le nombre 10 dans la calculatrice. Ce nombre est votre minimum, votre valeur de départ.</li>
+                <li>Appuyez sur "-" pour dire à la calculatrice de soustraire.</li>
+                <li>Ensuite, entrez le chiffre 2. Deux est le soustractif, le nombre que vous allez soustraire du minimum.</li>
+                <li>Appuyez sur "=" (le signe égal) pour trouver la réponse ou la différence des deux nombres. Votre réponse sera "8".</li>
+            </ol>
+
+            <h3>Multiplication</h3>
+            <p>La multiplication facilite l'addition d'un même nombre à plusieurs reprises. Il y a cinq douzaines d'œufs dans un panier. Vous devez connaître le nombre total d'œufs dans ce panier. Une douzaine signifie 12, et comme il y a 5 douzaines dans le problème, vous allez compter 12 œufs, 5 fois.</p>
+            <p>Appuyez sur AC pour réinitialiser la calculatrice.</p>
+            <ol>
+                <li>Entrez "12" dans la calculatrice. Douze est votre multiplicande.</li>
+                <li>Appuyez sur "*" ou "x" pour multiplier.</li>
+                <li>Appuyez sur "5". Cinq est votre multiplicateur ; combien de fois vous devez ajouter douze.</li>
+                <li>Appuyez sur "=" (le signe égal). Le produit, ou la réponse, est 60.</li>
+            </ol>
+
+            <h3>Division</h3>
+            <p>Maintenant, passons en revue la division. La dame aux œufs a 36 œufs dans son panier. Vous devez séparer ces œufs en douzaines. Combien de douzaines y a-t-il dans 36 ?</p>
+            <p>Appuyez sur AC pour réinitialiser la calculatrice.</p>
+            <ol>
+                <li>Entrez "36" dans la calculatrice. C'est le dividende, le nombre que vous allez diviser.</li>
+                <li>Appuyez sur "/" ou "÷" pour diviser.</li>
+                <li>Appuyez sur "12". Douze est votre diviseur, le nombre par lequel vous devez diviser.</li>
+                <li>Appuyez sur "=" (le signe égal). Le quotient, ou la réponse, est 3. Il y a 3 douzaines d'œufs dans le panier de la dame aux œufs.</li>
+            </ol>
+            <p>L'utilisation de notre calculatrice gratuite en ligne est très simple. Il suffit d'entrer vos chiffres, de sélectionner la bonne opération et de voir votre résultat !</p>
+
         </div>
 
         <script src="index.js"></script>
