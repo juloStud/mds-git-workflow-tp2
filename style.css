@@ -41,7 +41,7 @@ body{
     margin-top: 20px;
     padding: 2px;
     max-width: 310px;
-    height:514.82px;
+    height:499px;
     background-color: #22252D;
     width:310px;
     border-radius: 9px;
@@ -51,10 +51,11 @@ body{
 
 .calculHistory{
     display: flex;
-    //align-items: start;
+    align-items: start;
     flex-direction: column-reverse;
     justify-content: flex-end;
     font-size: x-large;
+    overflow: hidden;
 }
 
 .buttons {

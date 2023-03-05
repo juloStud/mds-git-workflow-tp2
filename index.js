@@ -37,6 +37,7 @@ function addToHistory(calcul, answer){
         oldCalculs.classList.replace("lastCalc","calcul");
     }
     const newDiv = document.createElement("div");
+    newDiv.classList.add('historyElement');
     newDiv.classList.add('lastCalc');
     newDiv.textContent = saveValue;
     history.appendChild(newDiv);
@@ -55,6 +56,9 @@ function calculResult() {
 function clear(all) {
     if (all) {
         screenOldValue.value = '';
+        const historyElements = document.querySelectorAll('.historyElement');
+        historyElements.forEach(el => el.remove());
+
     }
     screen.value = '';
 }
