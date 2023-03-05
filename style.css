@@ -127,13 +127,13 @@ button:hover {
     transition: 0.1s ease;
 }
 
-#btnx {
+.btnx {
     color: #03D64F;
     background-color: #171515;
     
 }
 
-#btnx:hover {
+.btnx:hover {
     color: #171515;
     background-color: #03D64F;
     transition: 0.2s ease;

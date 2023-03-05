@@ -4,6 +4,8 @@ const buttons = document.querySelectorAll('[data-num]');
 const equal = document.getElementById('btn-equal');
 const history = document.querySelector('.calculHistory');
 const equalBtn = document.getElementById('btn-equal');
+const clearErrorBtn = document.getElementById('btn-clear-error');
+const clearAllBtn = document.getElementById('btn-clear');
 
 let beforeEqual = false;
 
@@ -46,6 +48,13 @@ function calculResult() {
 
 }
 
+function clear(all) {
+    if (all) {
+        screenOldValue.value = '';
+    }
+    screen.value = '';
+}
+
 buttons.forEach(function (button) {
     button.addEventListener('click', function (e) {
         writeElement(e.target.dataset.num);
@@ -63,4 +72,12 @@ document.addEventListener("keydown", function(event) {
     } else if (event.key === "Enter") {
       calculResult();
     }
-  });
+});
+
+clearErrorBtn.addEventListener('click', function (e) {
+    clear();
+})
+
+clearAllBtn.addEventListener('click', function (e) {
+    clear(true);
+})
