@@ -87,6 +87,29 @@ code {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.history {
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 2px;
+    max-width: 310px;
+    height:499px;
+    background-color: #22252D;
+    width:310px;
+    border-radius: 9px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.calculHistory{
+    display: flex;
+    align-items: start;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    font-size: x-large;
+    overflow: hidden;
+}
 
 .buttons {
     background-color: #171717;
@@ -101,6 +124,16 @@ code {
     width: 300px;
 }
 
+.calcul{
+    color:grey;
+    width:100%;
+    font-size: medium;
+}
+
+.lastCalc{
+    color: white;
+    font-size: x-large;
+}
 
 input {
     padding: 0%;
@@ -124,6 +157,7 @@ input {
 .screen-value {
     font-size: 20px;
     margin-top: 10px;
+    width: 290px;
 }
 
 button {
