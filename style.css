@@ -65,6 +65,7 @@ code {
 }
 
 .rowFlex{
+    display: flex;
     flex-direction: row;
 }
 
@@ -77,6 +78,7 @@ code {
 .instructions {
     padding: 30px;
     max-width: 620px;
+    margin-top: 30px;
 }
 
 .box {
@@ -94,12 +96,8 @@ code {
     margin-top: 20px;
     padding: 2px;
     max-width: 310px;
-    height:499px;
-    background-color: #22252D;
+    height: 505px;
     width:310px;
-    border-radius: 9px;
-    transition: height 0.2s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .calculHistory{
