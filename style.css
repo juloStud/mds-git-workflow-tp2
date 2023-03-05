@@ -51,9 +51,9 @@ body{
 
 .calculHistory{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    //align-items: start;
     flex-direction: column-reverse;
+    justify-content: flex-end;
     font-size: x-large;
 }
 
@@ -71,8 +71,14 @@ body{
 }
 
 .calcul{
-    color:white;
+    color:grey;
     width:100%;
+    font-size: medium;
+}
+
+.lastCalc{
+    color: white;
+    font-size: x-large;
 }
 
 input {
@@ -97,6 +103,7 @@ input {
 .screen-value {
     font-size: 20px;
     margin-top: 10px;
+    width: 290px;
 }
 
 button {

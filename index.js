@@ -32,8 +32,12 @@ function writeElement(value) {
 
 function addToHistory(calcul, answer){
     let saveValue = calcul + " = " +answer;
+    const oldCalculs = document.querySelector('.lastCalc');
+    if(oldCalculs){
+        oldCalculs.classList.replace("lastCalc","calcul");
+    }
     const newDiv = document.createElement("div");
-    newDiv.classList.add('calcul');
+    newDiv.classList.add('lastCalc');
     newDiv.textContent = saveValue;
     history.appendChild(newDiv);
 }
